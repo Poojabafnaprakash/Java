@@ -1,0 +1,14 @@
+
+public class Fruits {
+	private String gf;
+	
+	public void setName(String name){
+		gf = name;
+	}
+	
+	public String getName(){
+		return gf;
+	}
+
+	
+}
