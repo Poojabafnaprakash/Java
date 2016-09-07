@@ -2,7 +2,7 @@
 //Time complexity: o(n^2)
 public class SelectionSOrt {
 	public static void main(String args[]){
-		int[] arr = {5,6,7,7,1,3,2,5,10};
+		int[] arr = {5,6,7,0,0,3,2,5,10};
 		int min,temp;
 		for(int i=0;i<arr.length-2;i++){
 			min = i;
