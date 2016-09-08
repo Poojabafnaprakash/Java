@@ -79,7 +79,7 @@ public class MergeSort {
 	}
 	public static void main(String args[]){
 		
-		int arr[]={2,0,6,8,8,10};
+		int arr[]={2,0,0,6,8,8,10};
 		arr = merge(arr);
 		System.out.println("SOrted Array by Merge sort\n");
 		for(int i=0;i < arr.length; i++)

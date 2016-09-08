@@ -69,7 +69,7 @@ public class MergeSort {
 			}
 			else if(j < right.length)
 			{
-				result[k] = right[j];
+				result[k] = right[k];
 				j++;
 				k++;
 			}

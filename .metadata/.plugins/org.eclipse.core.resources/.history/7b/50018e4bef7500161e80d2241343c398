@@ -61,15 +61,15 @@ public class MergeSort {
 				}
 				k++;
 			}
-			else if(i < left.length)
+			else if(i < left[i])
 			{
 				result[k] = left[i];
 				i++;
 				k++;
 			}
-			else if(j < right.length)
+			else if(j < right[j])
 			{
-				result[k] = right[j];
+				result[k] = right[k];
 				j++;
 				k++;
 			}

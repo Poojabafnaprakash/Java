@@ -34,6 +34,8 @@ public class MergeSort {
 		}
 		
 		left = merge(left);
+		for(int h=0;h<arr.length;h++)
+		System.out.println(left[h]);
 		right = merge(right);
 		result = sort(left,right);
 		return result;
