@@ -1,0 +1,42 @@
+
+public class QuickSort {
+	
+	public static void Qsort(int arr[], int start, int end){
+		if(start < end){
+			int pivot = partition(arr,start,end);
+			Qsort(arr, start, pivot-1);
+			Qsort(arr, pivot+1, end);
+		}
+		
+	}
+	
+	public static int partition(int arr[], int start, int end){
+		int pi = start;
+		int pElement = arr[end];
+		for(int i = start; i < end; i++)
+		{
+			if(arr[i] <= pElement)
+			{
+				int temp1 = arr[i];
+				arr[i] = arr[pi];
+				arr[pi] = temp1;
+				pi++;
+			}
+		}
+		int temp2 = arr[pi];
+		arr[pi] = arr[end];
+		arr[end] = temp2;
+		return pi;
+	}
+	
+	public static void main(String args[]){
+		int arr[]={0,0,7,2,1,6,6,8,5,3,4};
+		int length = arr.length-1;
+		Qsort(arr,0,length);
+		System.out.println("Sorted by quick sort\n");
+		for(int i=0; i < arr.length; i++)
+			System.out.println(arr[i]);
+		
+	}
+
+}
